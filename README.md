@@ -83,6 +83,9 @@ brew install awscli
 # For Linux
 pip install awscli
 
+# For Windows (using MSI installer)
+# Download from: https://awscli.amazonaws.com/AWSCLIV2.msi
+
 # Configure AWS credentials
 aws configure
 ```
@@ -93,7 +96,7 @@ aws configure
 pip install boto3
 
 # Install additional libraries
-pip install Pillow  # For image processing
+pip install pillow  # For image processing
 pip install pandas  # For data manipulation
 ```
 
