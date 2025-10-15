@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Introduction() {
   return (
@@ -18,13 +19,87 @@ export default function Introduction() {
           </div>
         </div>
 
-        {/* What is AWS Section */}
+        {/* What is Cloud Computing Section */}
         <div className="bg-white rounded-3xl shadow-xl p-10 mb-10 border border-gray-100">
           <div className="flex items-center gap-4 mb-8">
-            <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center shadow-lg">
+            <div className="w-16 h-16 bg-gradient-to-br from-sky-500 to-blue-600 rounded-2xl flex items-center justify-center shadow-lg">
               <svg className="w-9 h-9 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
               </svg>
+            </div>
+            <div>
+              <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sky-600 to-blue-600">
+                What is Cloud Computing?
+              </h2>
+              <p className="text-gray-500 font-medium">The Foundation of Modern Technology</p>
+            </div>
+          </div>
+
+          <div className="space-y-6">
+            <p className="text-lg text-gray-700 leading-relaxed">
+              <strong className="text-sky-600">Cloud Computing</strong> is the delivery of computing services—including servers, storage, databases, networking, software, analytics, and intelligence—over the Internet ("the cloud") to offer faster innovation, flexible resources, and economies of scale.
+            </p>
+
+            {/* Cloud Computing Image */}
+            <div className="bg-gradient-to-br from-sky-50 to-blue-50 rounded-2xl p-6 border border-sky-100">
+              <div className="relative w-full h-[500px] rounded-xl overflow-hidden bg-white">
+                <Image 
+                  src="/cloud_ai/what-is-cloud-computing-3196.png" 
+                  alt="What is Cloud Computing" 
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <p className="text-sm text-gray-600 text-center mt-4">
+                Cloud computing enables on-demand access to computing resources without direct management
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="bg-gradient-to-br from-sky-50 to-blue-50 p-6 rounded-2xl border border-sky-100">
+                <div className="w-12 h-12 bg-sky-500 rounded-xl flex items-center justify-center mb-4">
+                  <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">No Physical Infrastructure</h3>
+                <p className="text-gray-700">Access powerful computing resources without owning physical servers</p>
+              </div>
+
+              <div className="bg-gradient-to-br from-sky-50 to-blue-50 p-6 rounded-2xl border border-sky-100">
+                <div className="w-12 h-12 bg-sky-500 rounded-xl flex items-center justify-center mb-4">
+                  <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">On-Demand Resources</h3>
+                <p className="text-gray-700">Scale up or down instantly based on your needs</p>
+              </div>
+
+              <div className="bg-gradient-to-br from-sky-50 to-blue-50 p-6 rounded-2xl border border-sky-100">
+                <div className="w-12 h-12 bg-sky-500 rounded-xl flex items-center justify-center mb-4">
+                  <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Global Access</h3>
+                <p className="text-gray-700">Access your applications and data from anywhere in the world</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* What is AWS Section */}
+        <div className="bg-white rounded-3xl shadow-xl p-10 mb-10 border border-gray-100">
+          <div className="flex items-center gap-4 mb-8">
+            <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center shadow-lg border border-gray-100">
+              <Image 
+                src="/cloud_ai/aws.png" 
+                alt="AWS Logo" 
+                width={64} 
+                height={64}
+                className="object-contain"
+              />
             </div>
             <div>
               <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-red-600">
@@ -35,9 +110,37 @@ export default function Introduction() {
           </div>
 
           <div className="space-y-6">
+            {/* AWS Logo Image */}
+            <div className="bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl p-8 border border-orange-100">
+              <div className="relative w-full h-[150px] rounded-xl overflow-hidden bg-white flex items-center justify-center p-4">
+                <Image 
+                  src="/cloud_ai/aws_logo.png" 
+                  alt="AWS Logo" 
+                  fill
+                  className="object-contain p-4"
+                />
+              </div>
+            </div>
+
             <p className="text-lg text-gray-700 leading-relaxed">
-              <strong className="text-orange-600">Amazon Web Services (AWS)</strong> is the world's most comprehensive and broadly adopted cloud platform, offering over 200 fully featured services from data centers globally.
+              <strong className="text-orange-600">Amazon Web Services (AWS)</strong> is the world's most comprehensive and broadly adopted cloud platform, offering over 200 fully featured services from data centers globally. Launched in 2006, AWS has become the market leader in cloud computing, powering millions of businesses from startups to Fortune 500 companies.
             </p>
+
+            {/* Cloud Companies Comparison */}
+            <div className="bg-white rounded-2xl p-6 border-2 border-orange-200">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">Major Cloud Providers</h3>
+              <div className="relative w-full h-[300px] rounded-xl overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center">
+                <Image 
+                  src="/cloud_ai/cloud_companies.webp" 
+                  alt="Cloud Computing Companies Comparison" 
+                  fill
+                  className="object-contain p-4"
+                />
+              </div>
+              <p className="text-sm text-gray-600 text-center mt-4">
+                AWS leads the cloud computing market, followed by Microsoft Azure, Google Cloud, and other major providers
+              </p>
+            </div>
 
             <div className="grid md:grid-cols-3 gap-6">
               <div className="bg-gradient-to-br from-orange-50 to-red-50 p-6 rounded-2xl border border-orange-100">
@@ -91,8 +194,24 @@ export default function Introduction() {
 
           <div className="space-y-6">
             <p className="text-lg text-gray-700 leading-relaxed">
-              <strong className="text-purple-600">Amazon Bedrock</strong> is a fully managed service that offers a choice of high-performing foundation models (FMs) from leading AI companies through a single API.
+              <strong className="text-purple-600">Amazon Bedrock</strong> is a fully managed service that offers a choice of high-performing foundation models (FMs) from leading AI companies like Anthropic, Meta, Cohere, and Amazon through a single API. It provides a serverless experience, meaning you can get started quickly, easily experiment with different models, and seamlessly integrate AI capabilities into your applications.
             </p>
+
+            {/* Bedrock Architecture Image */}
+            <div className="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-2xl p-6 border border-purple-100">
+              <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">AWS Bedrock Architecture</h3>
+              <div className="relative w-full h-[400px] rounded-xl overflow-hidden bg-white p-4">
+                <Image 
+                  src="/cloud_ai/bedrock_architecture.jpg" 
+                  alt="AWS Bedrock Architecture" 
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <p className="text-sm text-gray-600 text-center mt-4">
+                AWS Bedrock provides a unified API to access multiple AI models with enterprise-grade security and privacy
+              </p>
+            </div>
 
             <div className="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-2xl p-8 border border-purple-100">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Key Features</h3>
@@ -146,6 +265,37 @@ export default function Introduction() {
                 </div>
               </div>
             </div>
+
+            {/* Available AI Models */}
+            <div className="bg-white rounded-2xl p-8 border-2 border-purple-200">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Available Foundation Models</h3>
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-xl border border-purple-200">
+                  <h4 className="font-bold text-lg text-purple-900 mb-2">Anthropic Claude</h4>
+                  <p className="text-sm text-gray-700">Advanced conversational AI with strong reasoning and coding capabilities</p>
+                </div>
+                <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-xl border border-blue-200">
+                  <h4 className="font-bold text-lg text-blue-900 mb-2">Meta Llama</h4>
+                  <p className="text-sm text-gray-700">Open-source models for text generation and understanding</p>
+                </div>
+                <div className="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-xl border border-green-200">
+                  <h4 className="font-bold text-lg text-green-900 mb-2">Amazon Titan</h4>
+                  <p className="text-sm text-gray-700">Amazon's own models for text generation and embeddings</p>
+                </div>
+                <div className="bg-gradient-to-br from-orange-50 to-orange-100 p-6 rounded-xl border border-orange-200">
+                  <h4 className="font-bold text-lg text-orange-900 mb-2">Cohere</h4>
+                  <p className="text-sm text-gray-700">Specialized in text generation and semantic search</p>
+                </div>
+                <div className="bg-gradient-to-br from-pink-50 to-pink-100 p-6 rounded-xl border border-pink-200">
+                  <h4 className="font-bold text-lg text-pink-900 mb-2">Stability AI</h4>
+                  <p className="text-sm text-gray-700">Text-to-image generation with Stable Diffusion</p>
+                </div>
+                <div className="bg-gradient-to-br from-indigo-50 to-indigo-100 p-6 rounded-xl border border-indigo-200">
+                  <h4 className="font-bold text-lg text-indigo-900 mb-2">AI21 Labs</h4>
+                  <p className="text-sm text-gray-700">Jurassic models for complex text generation tasks</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -167,7 +317,7 @@ export default function Introduction() {
 
           <div className="space-y-6">
             <p className="text-lg text-gray-700 leading-relaxed">
-              <strong className="text-blue-600">Generative AI</strong> is a type of artificial intelligence that can create new content—including text, images, code, audio, and video—based on patterns learned from existing data.
+              <strong className="text-blue-600">Generative AI</strong> is a type of artificial intelligence that can create new content—including text, images, code, audio, and video—based on patterns learned from existing data. Unlike traditional AI that simply classifies or analyzes data, generative AI produces entirely new, original content that didn't exist before.
             </p>
 
             <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-8 border border-blue-100">
@@ -321,6 +471,78 @@ export default function Introduction() {
               </div>
               <p className="text-gray-700 leading-relaxed">Analyze data, generate reports, predict trends, and provide actionable business insights</p>
             </div>
+          </div>
+        </div>
+
+        {/* Why Cloud AI Matters Section */}
+        <div className="bg-gradient-to-br from-purple-600 via-indigo-600 to-purple-700 rounded-3xl shadow-xl p-10 mb-10 text-white">
+          <div className="text-center mb-8">
+            <h2 className="text-4xl font-bold mb-4">Why Cloud AI Matters</h2>
+            <p className="text-xl text-purple-100">The Future of Innovation is Here</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+              <div className="flex items-start gap-4">
+                <div className="flex-shrink-0 w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
+                  <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold mb-2">Accelerated Innovation</h3>
+                  <p className="text-purple-100">Build AI applications in hours instead of months, without needing specialized ML expertise</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+              <div className="flex items-start gap-4">
+                <div className="flex-shrink-0 w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
+                  <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold mb-2">Reduced Costs</h3>
+                  <p className="text-purple-100">No infrastructure to manage, pay only for what you use, and avoid expensive AI talent hiring</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+              <div className="flex items-start gap-4">
+                <div className="flex-shrink-0 w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
+                  <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold mb-2">Enterprise Security</h3>
+                  <p className="text-purple-100">Your data stays private, meets compliance requirements, and never trains public models</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+              <div className="flex items-start gap-4">
+                <div className="flex-shrink-0 w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
+                  <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold mb-2">Flexibility & Choice</h3>
+                  <p className="text-purple-100">Choose from multiple AI models, switch between them easily, and use the best tool for each job</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-8 bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 text-center">
+            <p className="text-lg font-medium">
+              <span className="text-2xl font-bold">94%</span> of enterprises say AI is critical to their success over the next 5 years
+            </p>
           </div>
         </div>
 

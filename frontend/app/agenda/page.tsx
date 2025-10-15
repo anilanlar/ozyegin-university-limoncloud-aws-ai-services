@@ -69,7 +69,7 @@ export default function Agenda() {
                 <div className="flex-1">
                   <h3 className="text-2xl font-bold text-gray-900 mb-3">
                     Live Demonstrations
-                    <span className="ml-3 text-sm font-semibold text-blue-600 bg-blue-100 px-3 py-1 rounded-full">15 minutes</span>
+                    <span className="ml-3 text-sm font-semibold text-blue-600 bg-blue-100 px-3 py-1 rounded-full">7 minutes</span>
                   </h3>
                   <ul className="space-y-2 text-gray-700">
                     <li className="flex items-center gap-2">
@@ -110,7 +110,7 @@ export default function Agenda() {
                 <div className="flex-1">
                   <h3 className="text-2xl font-bold text-gray-900 mb-3">
                     How It Works
-                    <span className="ml-3 text-sm font-semibold text-emerald-600 bg-emerald-100 px-3 py-1 rounded-full">7 minutes</span>
+                    <span className="ml-3 text-sm font-semibold text-emerald-600 bg-emerald-100 px-3 py-1 rounded-full">15 minutes</span>
                   </h3>
                   <ul className="space-y-2 text-gray-700">
                     <li className="flex items-center gap-2">
